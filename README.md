@@ -1,7 +1,7 @@
 # choices13k Dataset
 
-The choices13k dataset consists of human gamble selection frequencies for
-13,006 risky choice problems generated using the procedure described in [[1](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf)], Appendix D. 
+The choices13k dataset consists of aggregate human selection frequencies on
+13,006 risky choice problems collected via Mechanical Turk. 
 
 ## Description
 

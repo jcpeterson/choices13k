@@ -26,7 +26,7 @@ sequentially.  We found that this relaxation did not significantly affect
 overall predictive accuracy in our models, and allowed us to more than halve
 the number of trials necessary for each problem.
 
-From [[1](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf):
+From [[1](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf)]:
 
 > In particular, each problem in the space is a choice between Option A, which
 > provides Ha with probability pHA or LA otherwise (with probability 1 >= pHA),

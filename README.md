@@ -53,37 +53,6 @@ From [[1](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf)]
 > full feedback (i.e., realization of the obtained and forgone outcomes
 > following each choice).
 
-## Citation
-
-If you use choices13k in your research, please cite:
-
-> Peterson, J. C., Bourgin, D. D., Agrawal, M., Reichman, D., and Griffiths, T. J. [Using large-scale experiments and machine learning to discover theories of human decision-making](https://science.sciencemag.org/content/372/6547/1209/). _Science(372): 1209-1214_, 2021.
-
-```
-@article {Peterson2021a,
-	author = {Peterson, Joshua C. and Bourgin, David D. and Agrawal, Mayank and Reichman, Daniel and Griffiths, Thomas L.},
-	title = {Using large-scale experiments and machine learning to discover theories of human decision-making},
-	volume = {372},
-	number = {6547},
-	pages = {1209--1214},
-	year = {2021},
-	doi = {10.1126/science.abe2629},
-	issn = {0036-8075},
-	journal = {Science}
-}
-```
-
-## References
-
-[1] Erev, I., Ert, E., Plonsky, O., Cohen, D., and Cohen, O. [From anomalies to
-forecasts: Toward a descriptive model of decisions under risk, under
-ambiguity, and from experience](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf). _Psychological Review, 124(4):369-409_, 2017.
-
-[2] Plonsky, O., Apel, R., Erev, I., Ert, E., and Tennenholtz, M. [When and how
-can social scientists add value to data scientists? A choice prediction
-competition for human decision making](https://cpc18.files.wordpress.com/2018/01/cpc18-white-paper.pdf). Unpublished Manuscript, 2018.
-
-
 ## Data Format
 
 The columns of `c13k_selections.csv` are:
@@ -126,3 +95,33 @@ which indicates that gambles associated with index 0 in `c13k_selections.csv` we
      26.0         0.95            21.0         0.95
      -1.0         0.05            23.0         0.05
 ```
+
+## Citation
+
+If you use choices13k in your research, please cite:
+
+> Peterson, J. C., Bourgin, D. D., Agrawal, M., Reichman, D., and Griffiths, T. J. [Using large-scale experiments and machine learning to discover theories of human decision-making](https://science.sciencemag.org/content/372/6547/1209/). _Science(372): 1209-1214_, 2021.
+
+```
+@article {Peterson2021a,
+	author = {Peterson, Joshua C. and Bourgin, David D. and Agrawal, Mayank and Reichman, Daniel and Griffiths, Thomas L.},
+	title = {Using large-scale experiments and machine learning to discover theories of human decision-making},
+	volume = {372},
+	number = {6547},
+	pages = {1209--1214},
+	year = {2021},
+	doi = {10.1126/science.abe2629},
+	issn = {0036-8075},
+	journal = {Science}
+}
+```
+
+## References
+
+[1] Erev, I., Ert, E., Plonsky, O., Cohen, D., and Cohen, O. [From anomalies to
+forecasts: Toward a descriptive model of decisions under risk, under
+ambiguity, and from experience](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf). _Psychological Review, 124(4):369-409_, 2017.
+
+[2] Plonsky, O., Apel, R., Erev, I., Ert, E., and Tennenholtz, M. [When and how
+can social scientists add value to data scientists? A choice prediction
+competition for human decision making](https://cpc18.files.wordpress.com/2018/01/cpc18-white-paper.pdf). Unpublished Manuscript, 2018.

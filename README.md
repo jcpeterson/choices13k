@@ -1,6 +1,6 @@
 # choices13k Dataset
 
-Authors: [Joshua C. Peterson](https://twitter.com/joshuacpeterson/status/1403357486518767616), David D. Bourgin, [Mayank Agrawal](https://mayank-agrawal.com/), [Daniel Reichman](https://sites.google.com/view/danielreichman/home), [Thomas L. Griffiths](http://cocosci.princeton.edu/tom/index.php)
+Authors: [Joshua C. Peterson](https://twitter.com/joshuacpeterson/status/1403357486518767616), [David D. Bourgin](https://www.davidbourgin.com), [Mayank Agrawal](https://mayank-agrawal.com/), [Daniel Reichman](https://sites.google.com/view/danielreichman/home), [Thomas L. Griffiths](http://cocosci.princeton.edu/tom/index.php)
 
 The choices13k dataset contains human decision rates on 13,006 risky choice problems.
 

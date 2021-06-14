@@ -2,12 +2,12 @@
 
 Authors: [Joshua C. Peterson](https://twitter.com/joshuacpeterson/status/1403357486518767616), David D. Bourgin, [Mayank Agrawal](https://mayank-agrawal.com/), [Daniel Reichman](https://sites.google.com/view/danielreichman/home), [Thomas L. Griffiths](http://cocosci.princeton.edu/tom/index.php)
 
-The choices13k dataset contains human decision rates on 13,006 risky choice problems. 
+The choices13k dataset contains human decision rates on 13,006 risky choice problems.
 
 ## Motivation
 
 Understanding how people make decisions is a central problem in psychology and
-economics.  Until recently, most theoretical accounts of human decision making
+economics. Until recently, most theoretical accounts of human decision making
 were developed using relatively small collections of in-lab data, limiting
 the kinds of models and theories that could be evalauated. To remedy
 this, choices13k provides a dataset of human decisions under uncertainty
@@ -142,6 +142,10 @@ If you use choices13k in your research, please cite:
 	publisher = {PMLR}, 
 } 
 ```
+
+## Related Work
+
+For another excellent risky choice dataset, see [CPC18](https://cpc-18.com/data/).
 
 ## References
 

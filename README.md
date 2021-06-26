@@ -1,15 +1,26 @@
 # choices13k Dataset
 
-The choices13k dataset consists of aggregate human selection frequencies on
-13,006 risky choice problems collected via Mechanical Turk. 
+Authors: [Joshua C. Peterson](https://twitter.com/joshuacpeterson/status/1403357486518767616), [David D. Bourgin](https://www.davidbourgin.com), [Mayank Agrawal](https://mayank-agrawal.com/), [Daniel Reichman](https://sites.google.com/view/danielreichman/home), [Thomas L. Griffiths](http://cocosci.princeton.edu/tom/index.php)
 
-## Description
+The choices13k dataset contains human decision rates on 13,006 risky choice problems.
 
-Each choice problem required a participant to select the most appealing option
+## Motivation
+
+Understanding how people make decisions is a central problem in psychology and
+economics. Until recently, most theoretical accounts of human decision making
+were developed using relatively small collections of in-lab data, limiting
+the kinds of models and theories that could be evalauated. To remedy
+this, choices13k provides a dataset of human decisions under uncertainty
+suitable for modern ML (30x larger than previous datasets), collected according
+to best practices in the human decision making literature.
+
+## Risky choice problems
+
+Each risky choice problem required a participant to select the most appealing option
 from a set of two decision scenarios ("gambles"). Both gambles were represented
 to participants as a list of rewards and their associated probabilities. In
 each problem, one gamble ("Gamble A") was constrained to have only two
-outcomes. The other, "Gamble B," yielded a fixed reward with probability 1 - pL
+outcomes. The other ("Gamble B") yielded a fixed reward with probability 1 - pL
 and the outcome of a lottery (i.e., the outcome of another explicitly described
 gamble) otherwise. Gamble B's lottery varied by problem. For a detailed
 description of the gamble presentation and parameterization, see
@@ -75,9 +86,9 @@ The columns of `c13k_selections.csv` are:
 |    Corr   |    {-1, 0, 1}   | Whether there is a correlation (negative, zero, or positive) between the payoffs of the two gambles.                                                                                                                             |
 |   Block   | {1, 2, 3, 4, 5} | The "block ID" for the current problem. For problems with no feedback, Block is always 1. Otherwise, Block ID was sampled uniformly at random from {2, 3, 4, 5}.                                                                 |
 
-The specific payoff amounts and probabilities displayed on each problem is contained in `c13k_problems.json`. Keys correspond to the row index in `c13k_selections.csv`. The first entry looks like:
+The specific payoff amounts and probabilities displayed on each problem are contained in `c13k_problems.json`. Keys correspond to the row index in `c13k_selections.csv`. For example, the first entry is:
 
-```
+```json
 {
     "0" : {
         "A": [[0.95, 26.0], [0.05, -1.0]],
@@ -99,12 +110,12 @@ which indicates that gambles associated with index 0 in `c13k_selections.csv` we
 
 If you use choices13k in your research, please cite:
 
-> Peterson, J. C., Bourgin, D. D., Agrawal, M., Reichman, D., and Griffiths, T. J. [Using large-scale experiments and machine learning to discover theories of human decision-making](https://science.sciencemag.org/content/372/6547/1209/). _Science(372): 1209-1214_, 2021.
+- Peterson, J. C., Bourgin, D. D., Agrawal, M., Reichman, D., & Griffiths, T. L. (2021). [Using large-scale experiments and machine learning to discover theories of human decision-making](http://cocosci.princeton.edu/jpeterson/papers/peterson2021-science.pdf). _Science(372):1209-1214_.
 
-```
-@article {Peterson2021a,
-	author = {Peterson, Joshua C. and Bourgin, David D. and Agrawal, Mayank and Reichman, Daniel and Griffiths, Thomas L.},
+```bibtex
+@article{Peterson2021a,
 	title = {Using large-scale experiments and machine learning to discover theories of human decision-making},
+	author = {Peterson, Joshua C. and Bourgin, David D. and Agrawal, Mayank and Reichman, Daniel and Griffiths, Thomas L.},
 	volume = {372},
 	number = {6547},
 	pages = {1209--1214},
@@ -115,12 +126,32 @@ If you use choices13k in your research, please cite:
 }
 ```
 
+- Bourgin, D. D., Peterson, J. C., Reichman, D., Russell, S. J., & Griffiths, T. L. (2019). [Cognitive model priors for predicting human decisions](http://proceedings.mlr.press/v97/peterson19a.html). in _Proceedings of the 36th International Conference on Machine Learning, PMLR 97:5133-5141_.
+
+```bibtex
+@InProceedings{Bourgin2019a, 
+	title = {Cognitive model priors for predicting human decisions}, 
+	author = {Bourgin, David D. and Peterson, Joshua C. and Reichman, Daniel and Russell, Stuart J. and Griffiths, Thomas L.}, 
+	booktitle = {Proceedings of the 36th International Conference on Machine Learning}, 
+	pages = {5133--5141}, 
+	year = {2019}, 
+	volume = {97}, 
+	series = {Proceedings of Machine Learning Research}, 
+	month = {09--15 Jun}, 
+	publisher = {PMLR}, 
+} 
+```
+
+## Related Work
+
+For another excellent risky choice dataset, see [CPC18](https://cpc-18.com/data/).
+
 ## References
 
-[1] Erev, I., Ert, E., Plonsky, O., Cohen, D., and Cohen, O. [From anomalies to
+[1] Erev, I., Ert, E., Plonsky, O., Cohen, D., and Cohen, O. (2017). [From anomalies to
 forecasts: Toward a descriptive model of decisions under risk, under
-ambiguity, and from experience](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf). _Psychological Review, 124(4):369-409_, 2017.
+ambiguity, and from experience](http://oriplonsky.com/wp-content/uploads/2017/09/Erev-et-al-2017.pdf). _Psychological Review, 124(4):369-409_.
 
-[2] Plonsky, O., Apel, R., Erev, I., Ert, E., and Tennenholtz, M. [When and how
+[2] Plonsky, O., Apel, R., Erev, I., Ert, E., and Tennenholtz, M. (2018). [When and how
 can social scientists add value to data scientists? A choice prediction
-competition for human decision making](https://cpc18.files.wordpress.com/2018/01/cpc18-white-paper.pdf). Unpublished Manuscript, 2018.
+competition for human decision making](https://cpc18.files.wordpress.com/2018/01/cpc18-white-paper.pdf). Unpublished Manuscript.

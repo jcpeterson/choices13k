@@ -106,7 +106,7 @@ which indicates that gambles associated with index 0 in `c13k_selections.csv` we
      -1.0         0.05            23.0         0.05
 ```
 
-NOTE: 'bRate' is the average of the gamble B selection probabilities over all subjects for a problem. Specifically, each subject completed 5 trials for a given problem. The frequency the subject chose gamble B across those trials gives p(Gamble B) for that subject x problem. Those probabilities were then averaged over subjects to generate the final `bRate` for a problem. Hence bRate * n  gives the sum of gamble B selection probabilities across all subjects on a problem.
+NOTE: `bRate` is the average of the gamble B selection probabilities over all subjects for a problem. Specifically, each subject completed 5 trials for a given problem. The frequency the subject chose gamble B across those trials gives p(Gamble B) for that subject x problem. Those probabilities were then averaged over subjects to generate the final `bRate` for a problem. Hence bRate * n  gives the sum of gamble B selection probabilities across all subjects on a problem.
 
 ## Citation
 
